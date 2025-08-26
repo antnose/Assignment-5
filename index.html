@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-green-100 h-[100%] pb-[500px]">
+  <body class="bg-green-100 h-[100%] pb-12">
     <!-- Navbar Start -->
     <div class="navbar flex justify-between px-14 py-6 items-center">
       <div class="flex items-center justify-center">
@@ -433,6 +433,7 @@
             <p class="ml-2">Call History</p>
           </div>
           <button
+            id="historyClearBtn"
             class="btn bg-green-600 text font-bold text-white rounded-2xl"
           >
             Clear
@@ -440,16 +441,7 @@
         </div>
 
         <!-- Demo History -->
-        <div
-          class="flex items-center justify-between bg-gray-300 p-3 rounded-xl mt-3"
-        >
-          <div>
-            <p>Fire Service Number</p>
-            <p>999</p>
-          </div>
-
-          <div>11:36:58</div>
-        </div>
+        <div id="historySection"></div>
       </div>
     </div>
     <!-- Card Section End -->
