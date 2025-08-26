@@ -21,11 +21,11 @@
   </head>
   <body class="bg-green-100 h-[100%] pb-12">
     <!-- Navbar Start -->
-    <div class="navbar flex justify-between md:px-14 md:py-6 items-center">
+    <div class="navbar flex justify-between md:px-14 md:py-3 items-center">
       <div class="flex items-center justify-center">
         <img width="50px" src="./assets/logo.png" alt="" />
         <a
-          class="hidden md:visible text-2xl text-[#006747] font-bold ml-2.5 leading-none"
+          class="hidden md:block text-2xl text-[#006747] font-bold ml-2.5 leading-none"
           >Emergency <br />
           Service
         </a>
@@ -74,9 +74,9 @@
     <!-- Hero Section End -->
 
     <!-- Card Section Start -->
-    <div class="grid grid-cols-12 gap-2 mt-12 px-16">
+    <div class="grid md:grid-cols-12 md:gap-2 mt-12 px-16 grid-cols-1">
       <div class="col-span-8">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <!-- National Emergency Number Card start  -->
           <div class="card bg-white p-8">
             <div class="flex items-center justify-between">
@@ -103,7 +103,7 @@
                 All
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -142,7 +142,7 @@
                 Police
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -181,7 +181,7 @@
                 Fire
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -218,7 +218,7 @@
                 Health
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -257,7 +257,7 @@
                 Help
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -296,7 +296,7 @@
                 Govt.
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -335,7 +335,7 @@
                 Electricity
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -372,7 +372,7 @@
                 NGO
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -411,7 +411,7 @@
                 Travel
               </p>
               <div class="card-actions grid grid-cols-2 mt-2">
-                <button class="btn bg-white rounded-2xl w-full">
+                <button class="btn bg-white rounded-2xl w-full copy_btn">
                   <i class="fa-solid fa-copy text-gray-400"></i> Copy
                 </button>
 
@@ -427,7 +427,9 @@
         </div>
       </div>
 
-      <div class="col-span-4 bg-white rounded-xl py-6 px-6">
+      <div
+        class="md:col-span-4 mt-4 md:mt-0 py-3 bg-white rounded-xl md:py-6 px-6"
+      >
         <div class="flex items-center justify-between">
           <div class="flex items-center justify-center">
             <i class="fa-solid fa-clock text-gray-500 text-2xl"></i>

@@ -1,14 +1,17 @@
 const lifeCount = document.querySelector("#lifeCount");
 const coin = document.querySelector("#coinCount");
 let historySection = document.querySelector("#historySection");
+const copyCount = document.querySelector("#copyCount");
 let life = 0;
 let coinValue = 100;
+let copyValue = 0;
 document.querySelectorAll(".love_btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     lifeCount.innerHTML = ++life;
   });
 });
+
 document.querySelectorAll(".call_btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
     const fullCard = btn.closest(".card");
@@ -46,4 +49,15 @@ document.querySelectorAll(".call_btn").forEach((btn) => {
 document.querySelector("#historyClearBtn").addEventListener("click", (e) => {
   e.preventDefault();
   historySection.innerHTML = "";
+});
+
+document.querySelectorAll(".copy_btn").forEach((copyBtn) => {
+  copyBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const fullCard = copyBtn.closest(".card");
+    const cardNum = fullCard.querySelector(".number").innerText;
+    copyCount.innerText = ++copyValue;
+    navigator.clipboard.writeText(cardNum);
+    alert(`নম্বর কপি হয়েছেঃ ${cardNum}`);
+  });
 });
